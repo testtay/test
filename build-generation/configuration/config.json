@@ -7,12 +7,12 @@
       "path": "./web",
       "configurations": { 
           "dev": {
-            "enabled": true,
-            "branch": "develop"
+            "branch": "develop",
+            "build-enabled": true
           }, 
           "prod": {
-            "enabled": true,
-            "branch": "master"
+            "branch": "master",
+            "build-enabled": true
           }
         }
     }
