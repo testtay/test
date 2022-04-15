@@ -4,9 +4,7 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     steps:
-    - name: "debug"
-      run: cd ./ && ls
     - name: "What the actual"
       uses: actions/checkout@v3
     - name: Hello world action step
-      uses: ./build-generation # Uses an action in the root directory
+      uses: ./build-generation 
