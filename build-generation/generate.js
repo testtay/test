@@ -1,4 +1,8 @@
-var fs = require('fs');
+var fs = require("fs");
 
-var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-console.log(config)
+fs.readdirSync("/").forEach((file) => {
+  console.log(file);
+});
+
+var config = JSON.parse(fs.readFileSync("config.json", "utf8"));
+console.log(config);
