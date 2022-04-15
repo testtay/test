@@ -1,0 +1,27 @@
+name: angular_build
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: 'Build environment that should be used for this build.'
+        required: true
+        type: string
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: clone_code
+      uses: actions/checkout@master
+    - name: install_node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - name: restore_dependencies
+      run: npm install       
+    - name: build
+      run: npm run build:${{ inputs.environment }}
+    - name: upload_artifacts
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: angular-app
+        path: "./dist"

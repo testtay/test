@@ -1,5 +1,0 @@
-- uses: actions/checkout@v2
-- run: |
-    cd web
-    npm i
-    npm run build:{{configuration}}

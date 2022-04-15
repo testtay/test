@@ -1,6 +1,11 @@
 name: {{name}}
-"on":
+on:
   push:
     branches:
-      - {{branch}}
+       - {{branch}}
 jobs:
+  build:
+    steps:
+      - uses: {{build_workflow}}
+        with:     
+          environment: {{build_environment}}

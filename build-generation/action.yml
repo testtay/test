@@ -1,4 +1,4 @@
-name: 'Workflow Generation'
+name: 'workflow_generation'
 description: 'Generates workflows based on configuration.'
 runs:
   using: 'node16'

@@ -1,18 +1,17 @@
 [
   {
     "name": "test-product",
+    "repository": "https://github.com/testtay/test2",
     "build": "angular",
     "deploy": "firebase",
     "client": {
       "path": "./web",
       "configurations": { 
           "dev": {
-            "branch": "develop",
-            "build-enabled": true
+            "branch": "develop"
           }, 
           "prod": {
-            "branch": "master",
-            "build-enabled": true
+            "branch": "master"
           }
         }
     }
