@@ -6,4 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Hello world action step
-      uses: ./build-generation # Uses an action in the root directory
+      uses: /build-generation # Uses an action in the root directory
