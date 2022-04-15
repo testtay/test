@@ -1,6 +1,10 @@
-var fs = require("fs");
+const fs = require("fs");
+const core = require('@actions/core');
+const github = require('@actions/github');
 
-fs.readdirSync("/").forEach((file) => {
+var home = process.env['GITHUB_WORKSPACE']
+console.log(home)
+fs.readdirSync("home").forEach((file) => {
   console.log(file);
 });
 
