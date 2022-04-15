@@ -1,10 +1,10 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  build-and-sync-workflows:
     runs-on: ubuntu-latest
     steps:
-    - name: "What the actual"
+    - name: "Checkout Actions"
       uses: actions/checkout@v3
-    - name: Hello world action step
+    - name: "Build Workflows"
       uses: ./build-generation 
