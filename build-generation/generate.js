@@ -1,7 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const core = require("@actions/core");
-const github = require("@actions/github");
 const home = process.env["GITHUB_WORKSPACE"];
 
 var config = JSON.parse(
@@ -11,4 +9,11 @@ var config = JSON.parse(
   )
 );
 
-console.log(config);
+for (let i = 0; i < config.length; i++) {
+    const project = config[i];
+    console.log(`Project: ${project.name}`)
+    for(var configuration in project.client.configurations){
+        var build_configuration = project.client.configurations[configuration];
+        console.log(build_configuration)
+    }
+}

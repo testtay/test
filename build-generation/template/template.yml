@@ -1,0 +1,6 @@
+name: {{name}}
+"on":
+  push:
+    branches:
+      - {{branch}}
+jobs:

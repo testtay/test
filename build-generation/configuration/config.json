@@ -1,6 +1,6 @@
 [
   {
-    "project": "test-product",
+    "name": "test-product",
     "build": "angular",
     "deploy": "firebase",
     "client": {
