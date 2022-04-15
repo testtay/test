@@ -1,0 +1,13 @@
+name: Workflow Sync
+on:
+  push: 
+    branches:
+      - master
+    workflow_dispatch:
+jobs:
+  generate-workflows:
+    runs-on: ubuntu-latest
+    runs: 
+      using: 'node16'
+      main: "generate.js"
+    
