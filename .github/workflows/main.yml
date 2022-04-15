@@ -4,6 +4,10 @@ on:
     branches:
       - master
     workflow_dispatch:
-runs: 
-  using: 'node16'
-  main: "generate.js"
+jobs:
+    your_npm_job_name:
+        steps:
+          runs: 
+            using: 'node16'
+            main: "generate.js"
+
