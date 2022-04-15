@@ -74,10 +74,11 @@ for (let i = 0; i < config.length; i++) {
     .then(() => {
       console.log("Copying Build Files");
       fs.copySync(base_output_path, repo_path, { recursive: true });
-      git()
-        .add('./*')
-        .commit("updating build scripts")
-        .addRemote("origin", "master")
-        .push(["-u", "origin", "master"], () => console.log("done"));
     });
+
+    git()
+    .add('./*')
+    .commit("updating build scripts")
+    .addRemote("origin", "master")
+    .push(["-u", "origin", "master"], () => console.log("done"));
 }
