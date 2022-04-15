@@ -18,9 +18,3 @@
     }
   }
 ]
-
-// entryPoint: "./web"
-// repoToken: "${{ secrets.GITHUB_TOKEN }}"
-// firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROD }}"
-// channelId: live
-// projectId: "${{ secrets.FIREBASE_PROJECT_PROD }}"
