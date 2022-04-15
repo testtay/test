@@ -77,8 +77,7 @@ const action_root = path.join(home, "build-generation");
     await git()
       .add('.')
       .commit("updating build scripts")
-      .addRemote("origin", "master")
-      .push();
+      .push(["-u", "origin", "master"]);
     console.log("Done")
   }
 })();
