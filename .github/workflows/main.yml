@@ -1,13 +1,5 @@
-name: Workflow Sync
-on:
-  push: 
-    branches:
-      - master
-    workflow_dispatch:
-jobs:
-    your_npm_job_name:
-        steps:
-          runs: 
-            using: 'node16'
-            main: "generate.js"
-
+name: 'Hello World'
+description: 'Greet someone and record the time'
+runs:
+  using: 'node16'
+  main: 'generate.js'
